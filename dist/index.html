@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-C0mpatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>HCMUT Hospital</title>
+</head>
+<body>
+    <!-- SIDE BAR -->
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="/images/logo.png" alt="logo">
+                </span>
+
+                <div class="text hearder-text">
+                    <span class="name">HCMUT</span>
+                    <span class="profession">Hospital</span>
+                </div>
+            </div>
+
+            <i class='bx bxs-chevron-left toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="search" placeholder="Search..." >
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-brain icon' ></i>
+                            <span class="text nav-text">Doctor Manage</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user icon' ></i>
+                            <span class="text nav-text">Staff Manage</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-male-female icon' ></i>
+                            <span class="text nav-text">Patient Manage</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-injection icon'></i>
+                            <span class="text nav-text">Medical Supplies</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="logout">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Log out</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <!-- MAIN WINDOW -->
+    <!-- MAIN WINDOW -->
+    <nav class="main-window">
+        <form class="bar">
+            <div class="search">
+                <label for="">Search</label>
+                <input type="text">
+            </div>
+            <div class="funct">
+                <button>Function 1</button>
+                <button>Function 2</button>
+                <button>Function 3</button>
+                <button>Function 4</button>
+            </div>
+        </form>
+
+        <form class="add">
+            <h1>ADD NEW MEDICAL</h1>
+            <!-- Input name -->
+            <label for="name">Tên biệt dược</label>
+            <input type="text" name="name" required>
+            <br>
+            <!-- Input amount-->
+            <label for="amount">Số lượng</label>
+            <input type="number" name="amount" required>
+            <br>
+            <!-- Input unit-->
+            <label for="unit">Đơn vị</label>
+            <select name="unit" required>
+                <option value="">--Select--</option>
+                <option value="Ống">Ống</option>
+                <option value="Chai">Chai</option>
+                <option value="Lọ">Lọ</option>
+                <option value="Tuýp">Tuýp</option>
+                <option value="Viên">Viên</option>
+                <option value="Miếng">Miếng</option>
+                <option value="Gói">Gói</option>
+                <option value="Can">Can</option>
+                <option value="Bơm tiêm">Bơm tiêm</option>
+            </select>
+            <br>  
+            <!-- Input type -->
+            <label for="type" >Phân loại</label>
+            <select name="type" required>
+                <option value="">--Select--</option>
+                <option value="Thuốc gây tê, gây mê">Thuốc gây tê, gây mê</option>
+                <option value="Thuốc giãn cơ, thuốc giải dãn cơ">Thuốc giãn cơ, thuốc giải dãn cơ</option>
+                <option value="Thuốc giảm đau, hạ sốt, chống viêmn">Thuốc giảm đau, hạ sốt, chống viêm</option>
+                <option value="Thuốc chống thoái hoá khớp">Thuốc chống thoái hoá khớp</option>
+                <option value="Thuốc chống dị ứng">Thuốc chống dị ứng</option>
+                <option value="Thuốc giải độc">Thuốc giải độc</option>
+                <option value="Thuốc chống co giật, chống động kinh">Thuốc chống co giật, chống động kinh</option>
+                <option value="Thuốc điều trị kí sinh trùng">Thuốc điều trị kí sinh trùng</option>
+                <option value="Thuốc điều trị đau nửa đầu">Thuốc điều trị đau nửa đầu</option>
+                <option value="Thuốc điều trị ung thư và điều hoà miễn dịch">Thuốc điều trị ung thư và điều hoà miễn dịch</option>
+                <option value="Thuốc điều trị bệnh đường tiết niệu">Thuốc điều trị bệnh đường tiết niệu</option>
+                <option value="Thuốc chống Parkinson">Thuốc chống Parkinson</option>
+                <option value="Thuốc tác dụng đối với máu">Thuốc tác dụng đối với máu</option>
+                <option value="Thuốc điều trị bệnh da liễu">Thuốc điều trị bệnh da liễu</option>
+                <option value="Thuốc dùng chẩn đoán">Thuốc dùng chẩn đoán</option>
+                <option value="Thuốc tẩy trùng và sát khuẩn">Thuốc tẩy trùng và sát khuẩn</option>
+                <option value="Thuốc lợi tiểu">Thuốc lợi tiểu</option>
+                <option value="Thuốc đường tiêu hoá">Thuốc đường tiêu hoá</option>
+                <option value="Hocmon và các thuốc tác động vào hệ thống nội tiết">Hocmon và các thuốc tác động vào hệ thống nội tiết</option>
+                <option value="Huyết thanh và globulin miễn dịch">Huyết thanh và globulin miễn dịch</option>
+                <option value="Thuốc làm mềm cơ và ức chế cholinesterase">Thuốc làm mềm cơ và ức chế cholinesterase</option>
+                <option value="Thuốc trị bệnh mắt, tai mũi họng">Thuốc trị bệnh mắt, tai mũi họng</option>
+                <option value="Thuốc có tác dụng thúc đẻ, cầm máu sau đẻ và chống đẻ non">Thuốc có tác dụng thúc đẻ, cầm máu sau đẻ và chống đẻ non</option>
+                <option value="Dung dịch lọc màng bụng và lọc máu">Dung dịch lọc màng bụng và lọc máu</option>
+                <option value="Thuốc chống rối loạn tâm thần và thuốc tác động lên hệ thần kinh">Thuốc chống rối loạn tâm thần và thuốc tác động lên hệ thần kinh</option>
+                <option value="Thuốc tác dụng trên đường hô hấp">Thuốc tác dụng trên đường hô hấp</option>
+            </select>
+            <br>                
+            <!-- Input manufacturing date -->
+            <label for="manu-date">Ngày sản xuất</label>
+            <input type="date" name="manu_date" required>
+            <br>
+            <!-- Input expiry date -->
+            <label for="exp-date">Hạn sử dụng</label>
+            <input type="date" name="exp_date" required>
+            <br>
+            <!-- Input price -->
+            <label for="price">Giá</label>
+            <input type="number" name="price" required>
+            <br>
+            <!-- Input state -->
+            <label for="state">Tình trạng</label>
+            <input type="text" name="state">
+            <br>
+            <!-- Submit -->
+            <button>Add</button>
+        </form>
+    </nav>
+    
+</body>
+<script src="bundle.js"></script>
+</html>
